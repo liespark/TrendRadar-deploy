@@ -1,0 +1,21 @@
+# === 环境变量 / 密钥（绝不可提交入库）===
+.env
+.env.*.local
+
+# === Python / uv ===
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.log
+
+# === 运行时产物（避免仓库膨胀；仅 index.html 由 workflow 提交）===
+output/
+
+# === 编辑器 / 系统 ===
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
